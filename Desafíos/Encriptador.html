@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador</h1>
+    </header>
+    
+    <main>
+        <section class="lector">
+            <form class="contenedor">
+                <ul>
+                    <li> <label for="mensaje"> <h2 id="insertar"> Mensaje </h2> </label>
+                    <textarea id="mensaje" cols="70" rows="5" class="campoTexto" required placeholder="Digite el mensaje que desea encriptar sin acentos"></textarea> </li>
+
+                    <li> <button class="encriptar" id="boton" onclick="btnEncriptar()"> ↑ </button> <button class="desencriptar" id="boton" onclick="btnDesencriptar()"> ↓ </button> </li>
+
+                    <li> <label for="resultado"> <h2 id="exportar"> Encriptado </h2> </label>
+                        <textarea id="resultado" cols="70" rows="5" class="campoTexto" placeholder="Digite el mensaje ya encriptado que desea desencriptar"></textarea> </li>
+
+                    <li> <button class="limpiar" id="clear" onclick="btnLimpiar()"> Reset </button></li>
+            </ul>
+            </form>
+        </section>
+    </main>
+    <script src="EncriptadorJava.js"></script>
+</body>
+</html>
